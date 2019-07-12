@@ -39,7 +39,6 @@ public class Task {
 		System.out.println(map2);
 	}
 	
-	
 	public static Map<String, Integer> getWordFrequency(String str) {
 		String strArray[] = str.split(" ");
 		Map<String, Integer> map = new TreeMap<>();
