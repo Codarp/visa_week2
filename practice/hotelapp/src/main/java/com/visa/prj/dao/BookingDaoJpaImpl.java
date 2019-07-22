@@ -21,9 +21,8 @@ public class BookingDaoJpaImpl implements BookingDao {
 	@Override
 	public List<Hotel> findHotels(String criteria) {
 		TypedQuery<Hotel> query = em.
-				createQuery("select h from Hotel h where hotel_name LIKE :n or address LIKE :a", Hotel.class);
+				createQuery("select h from Hotel h where hotel_name LIKE :n or address LIKE :n", Hotel.class);
 		query.setParameter("n", "%"+criteria+"%");
-		query.setParameter("a", "%"+criteria+"%");
 		return query.getResultList();
 	}
 

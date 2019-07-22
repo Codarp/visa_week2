@@ -4,17 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title> Hotel booking application</title>
-<link rel="stylesheet" href="css/style.css" />
+<title>first page</title>
 </head>
 <body>
-
-<div>
-    <h1>Welcome to Hotel booking application</h1>
-    <p>
-        <a href="search.do">Search hotels</a>
-    </p>
-</div>
-
+	<h1>Unicode Characters &#2309;</h1>
+	<%
+		for(int i = 2305; i <= 3200; i++) {
+	%>
+		<br /> Character  : &#<%= i %>; for the value <%= i %>
+	<% 
+		}
+	%>
 </body>
 </html>

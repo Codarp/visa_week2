@@ -45,7 +45,7 @@ public class Booking implements Serializable {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date checkinDate;
 
-	@Column(name="order_date")
+	@Column(name="checkout_date")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date checkoutDate;
 
